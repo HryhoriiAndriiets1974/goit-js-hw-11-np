@@ -1,0 +1,30 @@
+{
+  "name": "goit-js-hw-11-np",
+  "version": "2.0.0",
+  "description": "",
+  "homepage": "https://HryhoriiAndriiets1974.github.io/goit-js-hw-11-np",
+  "scripts": {
+    "start": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /goit-js-hw-11-np/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HryhoriiAndriiets1974/goit-js-hw-11-np.git"
+  },
+  "keywords": [],
+  "author": "Hryhorii Andriiets <Ander_1_agg@ukr.net>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HryhoriiAndriiets1974/goit-js-hw-11-np/issues"
+  },
+  "dependencies": {
+    "modern-normalize": "^1.1.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.5.0",
+    "parcel": "^2.5.0",
+    "parcel-reporter-clean-dist": "^1.0.4",
+    "posthtml-include": "^1.7.4"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
+}
