@@ -2,7 +2,7 @@ import './sass/main.scss';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import getRefs from './js/refs';
 import ImgApiService from './js/img-service';
-// import imgCard from'./templates/img-card.hbs'; parcel v2.0.0 - error
+// import imgCard from'./templates/img-card.hbs'; parcel v2.0.0 - error 03.06.2022
 import { createPhotoMarkup } from './templates/img-card.js';
 // Описаний в документації
 import SimpleLightbox from "simplelightbox";
