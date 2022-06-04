@@ -1,7 +1,11 @@
 **Read in other languages: [Русский](README.md), [Polski](README.pl.md).**
 
-# Parcel template
+# goit-js-hw-11 for new parcel-project-template version 2.0.0
 
+Зборка по інструкції стартувала тільки після її оновлення 03.06.2022. Описані в попередньому проекті ( chat-server ) маніпуляції не дополагали.
+Адаптація показала, що нова зборка з форматом даних *.hds не товаришує
+
+# Parcel template
 Этот проект был создан при помощи Parcel. Для знакомства и настройки
 дополнительных возможностей [обратись к документации](https://parceljs.org/).
 
@@ -14,12 +18,6 @@
 4. Создай новый пустой репозиторий на GitHub.
 5. Открой проект в VSCode, запусти терминал и свяжи проект с GitHub-репозиторием
    [по инструкции](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories#changing-a-remote-repositorys-url).
-   ----------
-   по факту на Node 16.15 не підіймалось, зносив і ставив 14.18.3 піднялось але помилок багато, зніс і поставив знову 16.15 і перед інсталом  удаляв і встановлював парсел
-   - зберіг на GitHub
-   - npm uninstall --save-dev parcel
-   - npm i --save-dev parcel
-   ----------
 6. Установи зависимости проекта в терминале командой `npm install` .
 7. Запусти режим разработки, выполнив команду `npm start`.
 8. Перейди в браузере по адресу [http://localhost:1234](http://localhost:1234).
