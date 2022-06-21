@@ -1,39 +1,33 @@
-import './sass/main.scss';
+// import './sass/main.scss';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
-import getRefs from './js/refs';
-import ImgApiService from './js/img-service';
-// import imgCard from'./templates/img-card.hbs'; parcel v2.0.0 - error 03.06.2022
-import { createPhotoMarkup } from './templates/img-card.js';
-// Описаний в документації
+
+// // Описаний в документації
+// import SimpleLightbox from "./index.js";
+// // Додатковий імпорт стилів
+// import "simplelightbox/dist/simple-lightbox.min.css";
+
 import SimpleLightbox from "simplelightbox";
-// Додатковий імпорт стилів
+// import SimpleLightbox from "simplelightbox/dist/simple-lightbox.esm"
 import "simplelightbox/dist/simple-lightbox.min.css";
 
-// var lightbox = new SimpleLightbox('.gallery a', { /* options */ });
+import getRefs from './js/refs';
+import ImgApiService from './js/img-service';
+import { createPhotoMarkup } from './js/img-cards';
+
+const axios = require('axios');
 const lightbox = new SimpleLightbox('.gallery a', {
   captionsData: "alt",
   captionDelay: 1000,
 });
 
-// -------------------------- counters
-// let i = 0;
-// let j = 0;
-// let k = 0;
-// ------------------------------------------
 let stopScroll = true;
 let onClickSearch = false;
 const refs = getRefs();
 const imgApiService = new ImgApiService();
 
 refs.searchForm.addEventListener('submit', onSearch);
-refs.loadMore.addEventListener('click', onScroll);
+// refs.loadMore.addEventListener('click', onScroll);
 refs.upBtn.addEventListener('click', onUpBtn);
-
-// ===================================== error scroll 1/2
-// document.addEventListener('DOMContentLoaded', infinitiScroll);
-
-// ========================================== bed old 1/2
-// window.addEventListener('scroll', infinitiScroll);
 
 function onSearch(e) {
   // i++; console.log(`Counter = ${i} -----------------`);
@@ -131,38 +125,6 @@ function onUpBtn() {
 }
 
 
-// =============================================== bed old 2/2
-// function infinitiScroll() {
-//     console.log(window.scrollY + window.innerHeight +1 - document.documentElement.scrollHeight);
-//   if(window.scrollY + window.innerHeight + 1 >=
-//   document.documentElement.scrollHeight && stopScroll) {
-//     onScroll();
-//   }};
-
-// ============================================== error scroll 2/2
-//   function infinitiScroll() {
-//   let options = {
-//     root: null,
-//     rootMargins: "0px",
-//     threshold: 0,
-//   };
-//   const observer = new IntersectionObserver(handleIntersect, options);
-//   observer.observe(document.querySelector(".footer"));
-//   //an initial load of some data
-//   if (!onClickSearch) return;
-//   onScroll();
-// };
-
-// function handleIntersect(entries) {
-//   if (entries[0].isIntersecting) {
-//     // console.warn("something is intersecting with the viewport"); && stopScroll
-//     if (!onClickSearch) return;
-//     onScroll();
-//   }
-// }
-
-
-// ----- attempt -3
 const io = new IntersectionObserver(
   ([entry], observer) => {
     //  console.log(entry);
