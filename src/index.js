@@ -1,4 +1,4 @@
-// import './sass/main.scss';
+import './sass/main.scss';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
 // // Описаний в документації
